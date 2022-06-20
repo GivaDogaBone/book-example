@@ -1,1 +1,0 @@
-./pipeline.sh build -u qscapital -p X7YFuTBpZ3wnxflT8o89uuJ6kgA2SPKm/kk6w+YQ3HPxOlcYV7gGeT279XW3pIg

@@ -1,1 +1,0 @@
-./pipeline.sh init --force --git-user GivaDogaBone --git-password R0ad8!k3Grav3l8!k3 --registry-user qscapital --registry-password !Quaypass2022
