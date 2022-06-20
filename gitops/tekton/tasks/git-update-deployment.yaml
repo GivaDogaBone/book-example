@@ -44,7 +44,6 @@ spec:
       script: |
         git config user.email "gq@qscapital.com.au"
         git config user.name "My Tekton Bot"
-        git config --global --unset credential.helper
 
         git add $(params.KUSTOMIZATION_PATH)/kustomization.yaml
         git commit -am "[ci] Image digest updated"
