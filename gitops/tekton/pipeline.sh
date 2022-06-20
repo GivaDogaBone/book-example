@@ -230,13 +230,6 @@ EOF
 
 command.build() {
 
-echo "Using parameters:"
-echo "   GIT_USER    : $GIT_USER"
-echo "   GIT_PASSWORD: $GIT_PASSWORD"
-echo "   REG_USER    : $IMAGE_USER"
-echo "   REG_PASSWORD: $IMAGE_PASSWORD"
-echo "   FORCE_SETUP : $FORCE_SETUP "
-
   cat > /tmp/pipelinerun.yaml <<-EOF
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
