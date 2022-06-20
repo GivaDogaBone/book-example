@@ -5,15 +5,15 @@ set -e -u -o pipefail
 declare -r SCRIPT_DIR=$(cd -P $(dirname $0) && pwd)
 declare COMMAND="help"
 
-GIT_URL=https://github.com/wpernath/person-service-config.git
+GIT_URL=https://github.com/GivaDogaBone/person-service-config.git
 GIT_REVISION=main
 GIT_USER=""
 GIT_PASSWORD=""
 
 PIPELINE=dev-pipeline
 CONTEXT_DIR=person-service
-IMAGE_NAME=quay.io/wpernath/person-service
-IMAGE_USER=wpernath
+IMAGE_NAME=quay.io/qscapital/person-service
+IMAGE_USER=qscapital
 IMAGE_PASSWORD=
 TARGET_NAMESPACE=book-ci
 FORCE_SETUP="false"
