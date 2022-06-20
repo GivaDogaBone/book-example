@@ -15,7 +15,7 @@ spec:
     - name: target-image
       type: string
       description: The target image name of the config (without tag/digest)
-      default: quay.io/qscapital/person-service
+      default: quay.io/qsc/person-service
 
     - name: kustomize-dev
       type: string

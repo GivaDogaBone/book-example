@@ -28,11 +28,11 @@ spec:
       description: real config within config git to use
       name: kustomize-dir
       type: string
-    - default: 'quay.io/qscapital/person-service:latest'
+    - default: 'quay.io/qsc/person-service:latest'
       description: Image to produce
       name: image-name
       type: string
-    - default: qscapital
+    - default: qsc+qsccicd
       description: 'username for image repo '
       name: repo-username
       type: string

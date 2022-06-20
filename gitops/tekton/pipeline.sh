@@ -12,7 +12,7 @@ GIT_PASSWORD=""
 
 PIPELINE=dev-pipeline
 CONTEXT_DIR=person-service
-IMAGE_NAME=quay.io/qscapital/person-service
+IMAGE_NAME=quay.io/qsc/person-service
 IMAGE_USER=qscapital
 IMAGE_PASSWORD=
 TARGET_NAMESPACE=book-ci
@@ -135,12 +135,12 @@ command.init() {
   # This script imports the necessary files into the current project 
   pwd
 
-echo "Using parameters:"
-echo "   GIT_USER    : $GIT_USER"
-echo "   GIT_PASSWORD: $GIT_PASSWORD"
-echo "   REG_USER    : $IMAGE_USER"
-echo "   REG_PASSWORD: $IMAGE_PASSWORD"
-echo "   FORCE_SETUP : $FORCE_SETUP "
+  echo "Using parameters:"
+  echo "   GIT_USER    : $GIT_USER"
+  echo "   GIT_PASSWORD: $GIT_PASSWORD"
+  echo "   REG_USER    : $IMAGE_USER"
+  echo "   REG_PASSWORD: $IMAGE_PASSWORD"
+  echo "   FORCE_SETUP : $FORCE_SETUP "
 
   # prepare secrets for SA
   if [ -z $GIT_USER ]; then 
@@ -229,6 +229,14 @@ EOF
 }
 
 command.build() {
+
+echo "Using parameters:"
+echo "   GIT_USER    : $GIT_USER"
+echo "   GIT_PASSWORD: $GIT_PASSWORD"
+echo "   REG_USER    : $IMAGE_USER"
+echo "   REG_PASSWORD: $IMAGE_PASSWORD"
+echo "   FORCE_SETUP : $FORCE_SETUP "
+
   cat > /tmp/pipelinerun.yaml <<-EOF
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
