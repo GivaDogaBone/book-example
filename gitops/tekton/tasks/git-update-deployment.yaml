@@ -44,7 +44,6 @@ spec:
       script: |
         git config user.email "gq@qscapital.com.au"
         git config user.name "My Tekton Bot"
-        git config --global credential.helper cache
 
         git add $(params.KUSTOMIZATION_PATH)/kustomization.yaml
         git commit -am "[ci] Image digest updated"
@@ -59,5 +58,3 @@ spec:
         fi
         # Make sure we don't add a trailing newline to the result!
         echo -n "$RESULT_SHA" > $(results.commit.path)
-        
-        git config --global --unset credential.helper
