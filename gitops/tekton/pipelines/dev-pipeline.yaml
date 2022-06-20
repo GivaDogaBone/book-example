@@ -32,7 +32,7 @@ spec:
       description: Image to produce
       name: image-name
       type: string
-    - default: wpernath
+    - default: qscapital
       description: 'username for image repo '
       name: repo-username
       type: string
